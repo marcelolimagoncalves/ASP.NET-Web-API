@@ -82,6 +82,7 @@ namespace ApiDevMedia.Controllers
         //    return Ok(cursos);
         //}
 
+        [Authorize]
         public IHttpActionResult GetCursos(int pagina = 1, int tamanhoPagina = 10)
         {
 
